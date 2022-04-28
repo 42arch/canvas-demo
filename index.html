@@ -13,20 +13,46 @@
 				height: 100%;
 			}
 			canvas {
-				/* border: 1px solid black; */
 				position: fixed;
 				top: 0;
 				left: 0;
-				/* width: 100vw;
-				height: 100vh; */
+			}
+
+			#app {
+				width: 100%;
+				height: 100%;
+			}
+
+			.title {
+				font-size: 24px;
+				font-weight: bold;
+				text-align: center;
+				color: #EF4444;
+				padding: 10px 0;
+			}
+
+			.list {
+				padding-top: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			a {
+				margin: 10px;
+				color: #10B981;
 			}
 		</style>
   </head>
   <body>
-    <!-- <div id="app"></div> -->
-
-		<canvas></canvas>
-    <script type="module" src="./src/gravity.js"></script>
-
+		<div id="app">
+			<div class="title">canvas demo</div>
+			<div class="list">
+				<a href="src/gravity/index.html">重力模拟</a>
+				<a href="src/collision-detection/index.html">碰撞检测</a>
+				<a href="src/collision/index.html">碰撞小球</a>
+			</div>
+		</div>
   </body>
 </html>
